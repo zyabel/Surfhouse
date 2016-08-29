@@ -1,0 +1,81 @@
+.responsive-slider {
+  max-width: 870px;
+  position: relative;
+}
+.responsive-slider [data-animate] {
+  opacity: 0;
+}
+.responsive-slider .slides {
+  position: relative;
+  overflow: hidden;
+}
+.responsive-slider .slides ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+}
+.responsive-slider .slides ul li {
+  display: inline-block;
+  width: 100%;
+}
+.responsive-slider .slides ul li .slide-body {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.responsive-slider .slider-control {
+  position: absolute;
+  top: 40%;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 31px 17px;
+}
+.responsive-slider .slider-control.left {
+  left: 0;
+  top: 45%;
+  background: #000;
+}
+.responsive-slider .slider-control.left:hover {
+  text-decoration: none;
+  opacity: 0.5;
+}
+.responsive-slider .slider-control.right {
+  right: 0;
+  top: 45%;
+  background: #000;
+}
+.responsive-slider .slider-control.right:hover {
+  text-decoration: none;
+  opacity: 0.5;
+}
+@media (max-width: 480px) {
+  .responsive-slider .slider-control.left,
+  .responsive-slider .slider-control.right {
+    display: none;
+  }
+}
+.responsive-slider .pages {
+  position: absolute;
+  top: 29%;
+  right: 11.5%;
+  text-align: center;
+}
+.responsive-slider .pages .page {
+  display: inline-block;
+  opacity: 0.3;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.responsive-slider .pages .page.active {
+  opacity: 1;
+  color: #826b60;
+}
+@media (max-width: 780px) {
+  .responsive-slider .pages {
+    display: none;
+  }
+}
