@@ -1,4 +1,76 @@
+.raleway {
+  font-family: 'Raleway', sans-serif;
+}
+.text-hide {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
 body {
   max-width: 1500px;
   line-height: 12px;
+}
+.top-wrapper {
+  width: 100%;
+  background: #abeafa;
+}
+.top-wrapper header,
+.top-wrapper .top-wrapper_center {
+  max-width: 1170px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+header .logo {
+  float: left;
+}
+header .logo img {
+  margin: 25px 0 0 69px;
+}
+header .social-icon {
+  float: right;
+  font-size: 0;
+  margin: 50px 16px 0 0px;
+}
+header .social-icon a {
+  margin-right: 11px;
+}
+header .social-icon i {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+header .social-icon .social__fb i {
+  background: url(../img/fb_icon.png) 0 0 no-repeat;
+  width: 12px;
+}
+header .social-icon .social__tw i {
+  background: url(../img/tw_icon.png) 0 0 no-repeat;
+}
+header .social-icon .social__yt i {
+  background: url(../img/yt_icon.png) 0 0 no-repeat;
+}
+header .social-icon .social__pin i {
+  background: url(../img/pin_icon.png) 0 0 no-repeat;
+}
+header .social-icon .social__ins i {
+  background: url(../img/inst_icon.png) 0 0 no-repeat;
+}
+header .social-icon select {
+  border: none;
+  background: transparent;
+  font-family: 'Raleway', sans-serif;
+  font-size: 10px;
+  color: #fff;
+  font-weight: bold;
+  padding: 3px 0px 0 0;
+  vertical-align: top;
+  width: 36px;
+}
+.top-wrapper_center .cart__block {
+  float: left;
+  width: 23%;
+}
+.top-wrapper_center .responsive-slider {
+  float: right;
+  width: 74%;
 }
