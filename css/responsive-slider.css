@@ -1,6 +1,9 @@
 .raleway {
   font-family: 'Raleway', sans-serif;
 }
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
 .text-hide {
   text-indent: 100%;
   white-space: nowrap;
@@ -36,26 +39,28 @@
 .responsive-slider .slider-control {
   position: absolute;
   top: 40%;
-  background-color: rgba(255, 255, 255, 0.5);
   padding: 31px 17px;
 }
 .responsive-slider .slider-control.left {
-  left: 0;
+  right: 5%;
   top: 45%;
-  background: #000;
+  background: #ffffff url(../img/control-arrow.png) 50% 50% no-repeat;
 }
 .responsive-slider .slider-control.left:hover {
   text-decoration: none;
-  opacity: 0.5;
+  background: #fbde06 url(../img/control-arrow.png) 50% 50% no-repeat;
 }
 .responsive-slider .slider-control.right {
   right: 0;
   top: 45%;
-  background: #000;
+  background: #ffffff url(../img/control-arrow.png) 50% 50% no-repeat;
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 .responsive-slider .slider-control.right:hover {
   text-decoration: none;
-  opacity: 0.5;
+  background: #fbde06 url(../img/control-arrow.png) 50% 50% no-repeat;
 }
 @media (max-width: 480px) {
   .responsive-slider .slider-control.left,

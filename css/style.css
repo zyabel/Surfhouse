@@ -1,6 +1,9 @@
 .raleway {
   font-family: 'Raleway', sans-serif;
 }
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
 .text-hide {
   text-indent: 100%;
   white-space: nowrap;
@@ -8,7 +11,6 @@
 }
 body {
   max-width: 1500px;
-  line-height: 12px;
 }
 .top-wrapper {
   width: 100%;
@@ -21,6 +23,7 @@ body {
   overflow: hidden;
 }
 header .logo {
+  display: block;
   float: left;
 }
 header .logo img {
@@ -57,7 +60,7 @@ header .social-icon .social__ins i {
 }
 header .social-icon select {
   border: none;
-  background: transparent;
+  background: #abeafa;
   font-family: 'Raleway', sans-serif;
   font-size: 10px;
   color: #fff;
@@ -66,11 +69,149 @@ header .social-icon select {
   vertical-align: top;
   width: 36px;
 }
+header .social-icon select option {
+  background: #abeafa;
+}
 .top-wrapper_center .cart__block {
   float: left;
   width: 23%;
 }
-.top-wrapper_center .responsive-slider {
+.top-wrapper_center .container {
   float: right;
   width: 74%;
+}
+.top-wrapper_center .container .slider__content-wrapper {
+  color: #fff51f;
+  font-family: 'Raleway', sans-serif;
+  width: 38%;
+  float: right;
+  margin-right: 92px;
+  padding: 106px 0 178px 0;
+}
+.top-wrapper_center .container .slider__content-wrapper h1 {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 32px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.top-wrapper_center .container .slider__content-wrapper p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 63px;
+}
+.top-wrapper_center .container .slider__content-wrapper button {
+  background: #fff51f;
+  padding: 18px 29px 14px 29px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 900;
+  border: none;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
+.top-wrapper_center .container .slider__content-wrapper button:hover,
+.top-wrapper_center .container .slider__content-wrapper button:focus {
+  background: #000000;
+  color: #fff51f;
+}
+.user__basket {
+  font-family: 'Raleway', sans-serif;
+  margin: 38px 0 9px 0;
+}
+.user__basket .login {
+  background: #f8f8f8;
+  font-weight: 400;
+  overflow: hidden;
+}
+.user__basket .login a {
+  width: 50%;
+  float: left;
+  display: block;
+  padding: 7px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 12px;
+  color: #fb4d01;
+}
+.user__basket .login a:hover,
+.user__basket .login a:focus {
+  text-decoration: underline;
+}
+.user__basket .cart {
+  background: #fb4d01;
+  overflow: hidden;
+}
+.user__basket .cart img,
+.user__basket .cart .cash__block,
+.user__basket .cart .cart__control {
+  float: left;
+}
+.user__basket .cart img {
+  margin: 13px 13px 10px 25px;
+}
+.user__basket .cart .cash__block {
+  width: 50%;
+  font-family: 'Raleway', sans-serif;
+  padding-left: 1px;
+}
+.user__basket .cart .cash__cart {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  padding-top: 12px;
+}
+.user__basket .cart .amount__items {
+  color: #faef03;
+  font-size: 14px;
+  font-weight: 400;
+}
+.user__basket .cart .cart__control a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #333;
+  font-size: 10px;
+}
+.user__basket .cart .cart__control .delete__cart {
+  padding: 16px 16px 7px 15px;
+}
+.user__basket .cart .cart__control .delete__cart i {
+  background: url(../img/cart-delete-icon.png) 50% 50% no-repeat;
+  width: 16px;
+  height: 15px;
+  display: block;
+}
+.user__basket .cart .cart__control .delete__cart i:hover {
+  background: url(../img/cart-delete-hover-icon.png) 50% 50% no-repeat;
+}
+.user__basket .cart .cart__control .edit__cart:hover {
+  color: #faef03;
+}
+.user__basket .cart__info {
+  font-size: 10px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+.user__basket .cart__info .view__cart {
+  background: #ee4a02;
+}
+.user__basket .cart__info .checkout {
+  background: #e24602;
+}
+.user__basket .search__cart {
+  background: #e9e9e9;
+}
+.user__basket .search__cart .search {
+  background: #e9e9e9;
+  border: none;
+  color: #0c0c0c;
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
