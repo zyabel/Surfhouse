@@ -336,35 +336,41 @@ header .social-icon select option {
 }
 aside {
   /*VERTICAL MENU*/
+}
+aside .vertical {
+  position: relative;
+  width: 200px;
   /* ALL UL */
   /* ALL LI */
   /* ALL A */
-  /* ALL A HOVER */
-  /* INNER UL HIDE */
-  /* INNER UL SHOW */
 }
-aside nav.vertical {
-  position: relative;
-  width: 200px;
-}
-aside nav.vertical ul {
+aside .vertical .first-level,
+aside .vertical .second-level,
+aside .vertical .third-level {
   list-style: none;
+  background: #26d2fc;
+  /* INNER UL HIDE */
 }
-aside nav.vertical li {
-  position: relative;
+aside .vertical .first-level .second-level,
+aside .vertical .second-level .second-level,
+aside .vertical .third-level .second-level {
+  background: #75e3fe;
+  list-style: square;
 }
-aside nav.vertical a {
-  display: block;
-  color: #eee;
-  text-decoration: none;
-  padding: 10px 15px;
-  background: #667;
-  transition: 0.2s;
+aside .vertical .first-level .second-level li:hover > a,
+aside .vertical .second-level .second-level li:hover > a,
+aside .vertical .third-level .second-level li:hover > a {
+  background: url(../img/arrow-list.png) 0 0 no-repeat;
 }
-aside nav.vertical li:hover > a {
-  background: #778;
+aside .vertical .first-level .third-level,
+aside .vertical .second-level .third-level,
+aside .vertical .third-level .third-level {
+  background: #81e6ff;
+  list-style: square;
 }
-aside nav.vertical ul ul {
+aside .vertical .first-level ul,
+aside .vertical .second-level ul,
+aside .vertical .third-level ul {
   position: absolute;
   left: 0%;
   top: 0;
@@ -378,11 +384,26 @@ aside nav.vertical ul ul {
       -ms-transform: translateX(50px);
           transform: translateX(50px);
 }
-aside nav.vertical li:hover > ul {
+aside .vertical li {
+  position: relative;
+  /* INNER UL SHOW */
+}
+aside .vertical li:hover > ul {
+  padding-left: 31px;
   left: 100%;
   visibility: visible;
   opacity: 1;
   -webkit-transform: translateX(0px);
       -ms-transform: translateX(0px);
           transform: translateX(0px);
+}
+aside .vertical a {
+  display: block;
+  color: #eee;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: 0.2s;
+}
+aside .vertical .first-level > li:hover {
+  background: #333;
 }
