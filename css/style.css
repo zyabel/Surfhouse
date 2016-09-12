@@ -4,11 +4,6 @@
 .roboto {
   font-family: 'Roboto', sans-serif;
 }
-.text-hide {
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-}
 /* Wobble Vertical  Animation*/
 .wobble-vertical {
   display: inline-block;
@@ -334,15 +329,44 @@ header .social-icon select option {
   font-style: italic;
   line-height: 14px;
 }
+.main-wrap {
+  max-width: 1500px;
+  background: #f8f8f8;
+}
+.main-wrap .main {
+  max-width: 1170px;
+  margin: -20px auto 0;
+}
+.main-wrap .main aside {
+  float: left;
+  width: 23%;
+}
+.main-wrap .main .products {
+  float: right;
+  width: 74%;
+}
 aside {
   /*VERTICAL MENU*/
 }
 aside .vertical {
   position: relative;
-  width: 200px;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  text-transform: uppercase;
   /* ALL UL */
   /* ALL LI */
   /* ALL A */
+}
+aside .vertical h2 {
+  padding: 29px 0 20px 42px;
+  color: #fff;
+  background: #333;
+  font-weight: 700;
+}
+aside .vertical .first-level > li > a {
+  padding-left: 40px;
 }
 aside .vertical .first-level,
 aside .vertical .second-level,
@@ -360,7 +384,7 @@ aside .vertical .third-level .second-level {
 aside .vertical .first-level .second-level li:hover > a,
 aside .vertical .second-level .second-level li:hover > a,
 aside .vertical .third-level .second-level li:hover > a {
-  background: url(../img/arrow-list.png) 0 0 no-repeat;
+  background: url(../img/arrow-list.png) 100% 0 no-repeat;
 }
 aside .vertical .first-level .third-level,
 aside .vertical .second-level .third-level,
@@ -374,7 +398,7 @@ aside .vertical .third-level ul {
   position: absolute;
   left: 0%;
   top: 0;
-  width: 100%;
+  width: 70%;
   visibility: hidden;
   opacity: 0;
   transition: -webkit-transform 0.2s;
@@ -386,10 +410,12 @@ aside .vertical .third-level ul {
 }
 aside .vertical li {
   position: relative;
+  padding: 10px 15px 10px 3px;
+  color: #333;
   /* INNER UL SHOW */
 }
 aside .vertical li:hover > ul {
-  padding-left: 31px;
+  padding-left: 28px;
   left: 100%;
   visibility: visible;
   opacity: 1;
@@ -399,11 +425,58 @@ aside .vertical li:hover > ul {
 }
 aside .vertical a {
   display: block;
-  color: #eee;
   text-decoration: none;
-  padding: 10px 15px;
   transition: 0.2s;
+  color: #333;
 }
 aside .vertical .first-level > li:hover {
   background: #333;
+}
+aside .vertical .first-level > li:hover > a {
+  color: #fff;
+}
+aside .banner__block {
+  margin: 33px 0 0 0;
+  width: 49%;
+  padding: 45.5% 0 68px 51.48%;
+  background: #e0e0e0;
+  color: #333;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+aside .tags__block {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  padding: 33px 30px;
+  font-family: 'Roboto', sans-serif;
+}
+aside .tags__block h2 {
+  font-size: 24px;
+  font-weight: 900;
+  font-style: italic;
+  color: #000;
+  padding-left: 4px;
+}
+aside .tags__block .tags__inner .active {
+  background: #faef03;
+}
+aside .tags__block .tags__inner a {
+  font-family: 'Roboto', sans-serif;
+  display: inline-block;
+  padding: 10px 11px 7px;
+  background: #e9e9e9;
+  font-size: 12px;
+  color: #333;
+  font-weight: 400;
+  text-decoration: none;
+  margin: 3px 2px 3px;
+}
+aside .tags__block .tags__inner a:hover {
+  padding: 10px 30px 8px;
+  font-size: 14px;
 }

@@ -4,11 +4,6 @@
 .roboto {
   font-family: 'Roboto', sans-serif;
 }
-.text-hide {
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-}
 /* Wobble Vertical  Animation*/
 .wobble-vertical {
   display: inline-block;
