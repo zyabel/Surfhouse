@@ -342,6 +342,7 @@ aside {
 	  	font-weight: 900;
 	  	font-size: 14px;
 	  	text-transform: uppercase;
+  	    z-index: 10;
 
 	  	h2 {
   		    padding: 29px 0 20px 42px;
@@ -381,7 +382,7 @@ aside {
 				position: absolute;
 				left: 0%;
 				top: 0;
-				width: 70%;
+				width: 75%;
 				visibility: hidden;
 				opacity: 0;
 				transition: transform 0.2s;
@@ -553,5 +554,85 @@ aside {
 				text-decoration: underline;	
 			}
 		}	
+	}
+}
+
+.top__products,
+.sale__products {
+	margin-top: -15px;
+}
+
+.new__products,
+.top__products,
+.sale__products {
+	.roboto;
+	font-weight: 900;
+	font-style: italic;
+	color: @main-font-color;
+
+	h2 {
+		font-size: 22px;
+	    margin: 28px 0 25px 20px;
+
+		a {
+			text-decoration: none;
+			color: @product-h;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.item_product {
+		width: 245px;
+		height: 310px;
+		overflow: hidden;
+		padding: 10px 10px 0 10px;
+		background: #fff;
+		margin-bottom: 30px;
+		
+		.img-product__link {
+			width: 100%;
+    		margin: 0;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		a {
+			width: 63%;
+			text-decoration: none;
+			display: block;
+			margin-top: 22px;
+			
+			.name__product {
+				display: block;
+				float: left;
+				font-size: 14px;
+				color: @main-font-color;
+				padding-left: 11px;		
+			}
+		}
+		.product__price {
+			width: 36%;
+			float: right;
+
+			.actual_price__product {
+				display: block;
+				float: right;
+				font-size: 18px;
+				color: @main-font-color;
+			}
+
+			.old_price__product {
+				float: right;
+				margin-left: 106px;
+				font-size: 14px;
+				color: #e24602;
+				text-decoration: line-through;
+			}
+		}
 	}
 }
