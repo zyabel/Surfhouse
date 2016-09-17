@@ -7,12 +7,14 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/variables.css">
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
 	<!-- bxSlider CSS file -->
 	<link href="css/jquery.bxslider.css" rel="stylesheet" />
 	<!-- jQuery library -->
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<!-- bxSlider Javascript file -->
 	<script src="js/jquery.bxslider.min.js"></script>
+	<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,800,900|Roboto:400,700,900,900i" rel="stylesheet">
 </head>
 <body>
@@ -664,7 +666,41 @@
 				<!-- end sale__products --> 
 			</div>
 			<!-- end products -->
-			<div class="bottom__content"></div>
+			<div class="bottom__content">
+				<!-- begin brand__block -->
+				<div class="brand__block">
+					<a href="#"><img src="img/brand-pic.png" alt="brand-pic.png"></a>
+					<a href="#"><img src="img/brand-pic.png" alt="brand-pic.png"></a>
+					<a href="#"><img src="img/brand-pic.png" alt="brand-pic.png"></a>
+					<a href="#"><img src="img/brand-pic.png" alt="brand-pic.png"></a>
+					<a href="#"><img src="img/brand-pic.png" alt="brand-pic.png"></a>
+					<a href="#"><img src="img/brand-pic.png" alt="brand-pic.png"></a>
+					<a href="#"><img src="img/brand-pic.png" alt="brand-pic.png"></a>
+					<a href="#"><img src="img/brand-pic.png" alt="brand-pic.png"></a>
+				</div>
+				<!-- end brand__block -->
+				<!-- begin instagram__widget -->
+				<div class="instagram__widget">
+					<h2><a href="#"><i></i>Instagram feed: <span>#surfhouse</span></a></h2>
+					<ul class="gallery clearfix">
+						<li><a href="img/fullscreen/1.JPG?lol=lol" rel="prettyPhoto[gallery1]" title="You can add caption to pictures. You can add caption to pictures. You can add caption to pictures."><img src="img/thumbnails/t_1.png" width="170" height="170" alt="Red round shape" /></a></li>
+						<li><a href="img/fullscreen/2.jpg" rel="prettyPhoto[gallery1]"><img src="img/thumbnails/t_2.png" width="170" height="170" alt="Nice building" /></a></li>
+						<li><a href="img/fullscreen/3.jpg" rel="prettyPhoto[gallery1]"><img src="img/thumbnails/t_3.png" width="170" height="170" alt="Fire!" /></a></li>
+						<li><a href="img/fullscreen/4.jpg" rel="prettyPhoto[gallery1]"><img src="img/thumbnails/t_4.png" width="170" height="170" alt="Rock climbing" /></a></li>
+						<li><a href="img/fullscreen/5.jpg" rel="prettyPhoto[gallery1]"><img src="img/thumbnails/t_5.png" width="170" height="170" alt="Fly kite, fly!" /></a></li>
+						<li><a href="img/fullscreen/6.jpg" rel="prettyPhoto[gallery1]"><img src="img/thumbnails/t_6.png" width="170" height="170" alt="Nice building" /></a></li>
+					</ul>
+				</div>
+				<!-- end instagram__widget -->
+				<!-- begin social__links-big -->
+				<div class="social__links-big">
+					<a href="#" class="fb-icon-big">Facebook</a>
+					<a href="#" class="tw-icon-big">Twitter</a>
+					<a href="#" class="pin-icon-big">Pinterest</a>	
+				</div>
+				<!-- end social__links-big -->
+
+			</div>
 		</div>
 		<!-- end main content -->
 	</div>
@@ -702,6 +738,27 @@ $(document).ready(function(){
   });
 });
 </script> 
+
+<!-- start instaram widget script-->
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function(){
+		$("area[rel^='prettyPhoto']").prettyPhoto();
+		
+		$(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: true});
+		$(".gallery:gt(0) a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'fast',slideshow:10000, hideflash: true});
+
+		$("#custom_content a[rel^='prettyPhoto']:first").prettyPhoto({
+			custom_markup: '<div id="map_canvas" style="width:260px; height:265px"></div>',
+			changepicturecallback: function(){ initialize(); }
+		});
+
+		$("#custom_content a[rel^='prettyPhoto']:last").prettyPhoto({
+			custom_markup: '<div id="bsap_1259344" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div><div id="bsap_1237859" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6" style="height:260px"></div><div id="bsap_1251710" class="bsarocks bsap_d49a0984d0f377271ccbf01a33f2b6d6"></div>',
+			changepicturecallback: function(){ _bsap.exec(); }
+		});
+	});
+</script>
+<!-- end intagram widget script-->
 </body>
 </html>
 

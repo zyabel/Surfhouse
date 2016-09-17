@@ -345,13 +345,17 @@ header .social-icon select option {
 .main-wrap .main aside {
   float: left;
   width: 270px;
-  margin-top: -20px;
+  margin-top: -23px;
 }
 .main-wrap .main .products {
   float: right;
   width: 74%;
-  margin-top: -20px;
+  margin-top: -23px;
   background: #f8f8f8;
+}
+.main-wrap .main .bottom__content {
+  width: 100%;
+  overflow: hidden;
 }
 aside {
   /*VERTICAL MENU*/
@@ -559,9 +563,11 @@ aside .articles_block .view__all_link i {
 aside .articles_block .view__all_link:hover {
   text-decoration: underline;
 }
-.top__products,
+.top__products {
+  margin-top: 42px;
+}
 .sale__products {
-  margin-top: -15px;
+  margin-top: 49px;
 }
 .new__products,
 .top__products,
@@ -648,4 +654,94 @@ aside .articles_block .view__all_link:hover {
   font-size: 14px;
   color: #e24602;
   text-decoration: line-through;
+}
+.bottom__content {
+  background: #eaeaea;
+}
+.bottom__content .brand__block {
+  background: #fff;
+}
+.bottom__content .brand__block a {
+  display: inline-block;
+  margin: 68px 14px 61px;
+}
+.bottom__content .brand__block a:hover {
+  -webkit-transform: scale(1.1, 1.1);
+      -ms-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+.bottom__content .brand__block a:last-child {
+  margin-right: 0;
+}
+.bottom__content .instagram__widget {
+  width: 100%;
+  overflow: hidden;
+}
+.bottom__content .instagram__widget h2 {
+  text-align: center;
+  padding: 36px 0 26px;
+}
+.bottom__content .instagram__widget h2 a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  color: #333;
+  font-size: 22px;
+  text-decoration: none;
+  display: block;
+  margin-top: 15px;
+  padding-left: 50px;
+}
+.bottom__content .instagram__widget h2 a i {
+  display: block;
+  height: 28px;
+  width: 28px;
+  background: url(../img/insta-icon.png) 39% 50% no-repeat;
+}
+.bottom__content .instagram__widget h2 a:hover,
+.bottom__content .instagram__widget h2 a:focus {
+  color: #8c8c8c;
+}
+.bottom__content .instagram__widget h2 a span {
+  font-size: 18px;
+}
+.bottom__content .instagram__widget ul {
+  list-style: none;
+}
+.bottom__content .instagram__widget ul li {
+  display: inline-block;
+  margin-right: 9px;
+}
+.bottom__content .instagram__widget ul li:hover,
+.bottom__content .instagram__widget ul li:focus {
+  opacity: 0.8;
+}
+.bottom__content .instagram__widget ul li img {
+  border: 7px solid #fff;
+}
+.bottom__content .instagram__widget ul li:last-child {
+  margin-right: 0;
+}
+.bottom__content .social__links-big {
+  width: 100%;
+  overflow: hidden;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-direction: row;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+}
+.bottom__content .social__links-big .fb-icon-big,
+.bottom__content .social__links-big .tw-icon-big,
+.bottom__content .social__links-big .pin-icon-big {
+  display: block;
+  -ms-flex-positive: 1;
+  -webkit-flex-grow: 1;
+          flex-grow: 1;
+  padding: 30px 15px;
+  text-align: center;
 }

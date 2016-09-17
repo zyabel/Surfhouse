@@ -317,18 +317,19 @@ header {
 		aside {
 			float: left;
 			width: 270px;
-			margin-top: -20px;
+			margin-top: -23px;
 		}
 
 		.products {
 			float: right;
 			width: 74%;
-			margin-top: -20px;
+			margin-top: -23px;
 			background: #f8f8f8;
 		}
 
 		.bottom__content {
-
+			width: 100%;	
+			overflow: hidden;
 		}
 	}
 }
@@ -557,9 +558,11 @@ aside {
 	}
 }
 
-.top__products,
+.top__products {
+	margin-top: 42px;
+}
 .sale__products {
-	margin-top: -15px;
+	margin-top: 49px;
 }
 
 .new__products,
@@ -633,6 +636,108 @@ aside {
 				color: #e24602;
 				text-decoration: line-through;
 			}
+		}
+	}
+}
+
+.bottom__content {
+	background: #eaeaea;
+
+	.brand__block {
+	    background: #fff;
+		
+		a {
+			display: inline-block;	
+			margin: 68px 14px 61px;
+
+			&:hover {
+				transform: scale(1.1,1.1); 
+			}
+		}
+		a:last-child {
+		 	margin-right: 0;
+		}
+	}
+
+	.instagram__widget {
+		width: 100%;
+		overflow: hidden;
+
+		h2 {
+			text-align: center;
+			padding: 36px 0 26px;
+			
+			a {	
+				.roboto;
+				font-weight: 900;
+				font-style: italic;
+				color: @main-font-color;
+				font-size: 22px;
+				text-decoration: none;
+				display: block;
+				margin-top: 15px;
+				padding-left: 50px;
+
+				i {
+					display: block;
+					height: 28px;
+					width: 28px;
+					background: url(../img/insta-icon.png) 39% 50% no-repeat;
+
+				}
+
+				&:hover,
+				&:focus {
+					color: lighten(@main-font-color, 35%);
+				}
+
+				span {
+					font-size: 18px;
+				}
+			}
+		}
+
+		ul {
+			list-style: none;
+
+			li {
+				display: inline-block;
+				margin-right: 9px;
+
+				&:hover,
+				&:focus {
+					opacity: 0.8;
+				}
+
+				img {
+					border: 7px solid #fff;
+				}
+			}
+
+			li:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+	.social__links-big {
+		width: 100%;
+		overflow: hidden;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-ms-flex-wrap: nowrap;
+		flex-wrap: nowrap;
+
+		.fb-icon-big,
+		.tw-icon-big,
+		.pin-icon-big {
+			display: block;
+			-ms-flex-positive: 1;
+			flex-grow: 1;
+			padding: 30px 15px;
+			text-align: center;
 		}
 	}
 }
