@@ -345,12 +345,12 @@ header .social-icon select option {
 .main-wrap .main aside {
   float: left;
   width: 270px;
-  margin-top: -23px;
+  margin-top: -20px;
 }
 .main-wrap .main .products {
   float: right;
   width: 74%;
-  margin-top: -23px;
+  margin-top: -20px;
   background: #f8f8f8;
 }
 .main-wrap .main .bottom__content {
@@ -679,7 +679,7 @@ aside .articles_block .view__all_link:hover {
 }
 .bottom__content .instagram__widget h2 {
   text-align: center;
-  padding: 36px 0 26px;
+  padding: 50px 0 27px;
 }
 .bottom__content .instagram__widget h2 a {
   font-family: 'Roboto', sans-serif;
@@ -689,10 +689,11 @@ aside .articles_block .view__all_link:hover {
   font-size: 22px;
   text-decoration: none;
   display: block;
-  margin-top: 15px;
-  padding-left: 50px;
+  margin: 0 auto;
+  width: 25%;
 }
 .bottom__content .instagram__widget h2 a i {
+  float: left;
   display: block;
   height: 28px;
   width: 28px;
@@ -724,6 +725,7 @@ aside .articles_block .view__all_link:hover {
 }
 .bottom__content .social__links-big {
   width: 100%;
+  margin-top: 57px;
   overflow: hidden;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -739,9 +741,20 @@ aside .articles_block .view__all_link:hover {
 .bottom__content .social__links-big .tw-icon-big,
 .bottom__content .social__links-big .pin-icon-big {
   display: block;
+  width: 100%;
   -ms-flex-positive: 1;
   -webkit-flex-grow: 1;
           flex-grow: 1;
-  padding: 30px 15px;
+  padding: 74px 15px;
   text-align: center;
+  font-size: 0;
+}
+.bottom__content .social__links-big .fb-icon-big {
+  background: #3b5997 url(../img/fb-icon-big.png) 50% 50% no-repeat;
+}
+.bottom__content .social__links-big .tw-icon-big {
+  background: #3fccfd url(../img/tw-icon-big.png) 50% 50% no-repeat;
+}
+.bottom__content .social__links-big .pin-icon-big {
+  background: #cb2027 url(../img/pin-icon-big.png) 50% 50% no-repeat;
 }
