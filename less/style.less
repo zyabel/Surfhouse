@@ -471,8 +471,9 @@ aside {
 				margin: 2px 2px 5px;
 
 				&:hover {
-					padding: 8px 30px 7px;
+					padding: 7px 12px 6px;
 					font-size: 14px;
+					background: #faef03
 				}
 			}		
 		}
@@ -594,6 +595,7 @@ aside {
 		padding: 10px 10px 0 10px;
 		background: #fff;
 		margin-bottom: 30px;
+		position: relative;
 		
 		.img-product__link {
 			width: 100%;
@@ -635,7 +637,36 @@ aside {
 				font-size: 14px;
 				color: #e24602;
 				text-decoration: line-through;
+			}			
+		}
+
+		.new__stock,
+		.hot_sale {
+		    width: 0px;
+		    height: 0px;
+		    border-style: inset;
+		    border-width: 45px  0px 0px 49px;
+		    border-color: #e24602 transparent transparent transparent ;
+			position: absolute;
+			top: 0;
+			right: 0;		
+
+			p {
+			    text-align: left;
+		        top: -38px;
+   				left: -24px;
+			    position: relative;
+			    width: 200px;
+			    height: 93px;
+			    margin: 0px;
+			    color: #fff;
+			    .roboto;
+			    font-size: 9px;
 			}
+		}
+
+		.hot_sale {
+			border-color: #faef03 transparent transparent transparent ;
 		}
 	}
 }

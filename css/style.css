@@ -491,8 +491,9 @@ aside .tags__block .tags__inner a {
   margin: 2px 2px 5px;
 }
 aside .tags__block .tags__inner a:hover {
-  padding: 8px 30px 7px;
+  padding: 7px 12px 6px;
   font-size: 14px;
+  background: #faef03;
 }
 aside .tags__block .view__all_link {
   width: 41%;
@@ -603,6 +604,7 @@ aside .articles_block .view__all_link:hover {
   padding: 10px 10px 0 10px;
   background: #fff;
   margin-bottom: 30px;
+  position: relative;
 }
 .new__products .item_product .img-product__link,
 .top__products .item_product .img-product__link,
@@ -654,6 +656,43 @@ aside .articles_block .view__all_link:hover {
   font-size: 14px;
   color: #e24602;
   text-decoration: line-through;
+}
+.new__products .item_product .new__stock,
+.top__products .item_product .new__stock,
+.sale__products .item_product .new__stock,
+.new__products .item_product .hot_sale,
+.top__products .item_product .hot_sale,
+.sale__products .item_product .hot_sale {
+  width: 0px;
+  height: 0px;
+  border-style: inset;
+  border-width: 45px  0px 0px 49px;
+  border-color: #e24602 transparent transparent transparent ;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.new__products .item_product .new__stock p,
+.top__products .item_product .new__stock p,
+.sale__products .item_product .new__stock p,
+.new__products .item_product .hot_sale p,
+.top__products .item_product .hot_sale p,
+.sale__products .item_product .hot_sale p {
+  text-align: left;
+  top: -38px;
+  left: -24px;
+  position: relative;
+  width: 200px;
+  height: 93px;
+  margin: 0px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 9px;
+}
+.new__products .item_product .hot_sale,
+.top__products .item_product .hot_sale,
+.sale__products .item_product .hot_sale {
+  border-color: #faef03 transparent transparent transparent ;
 }
 .bottom__content {
   background: #eaeaea;
