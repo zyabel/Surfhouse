@@ -8,12 +8,15 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/variables.css">
 	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/owl.theme.css">
 	<!-- bxSlider CSS file -->
 	<link href="css/jquery.bxslider.css" rel="stylesheet" />
 	<!-- jQuery library -->
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<!-- bxSlider Javascript file -->
 	<script src="js/jquery.bxslider.min.js"></script>
+	<script src="js/owl.carousel.js"></script>
 	<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,800,900|Roboto:400,700,900,900i" rel="stylesheet">
 </head>
@@ -79,31 +82,38 @@
 			<!-- end card__block -->
 			<!-- begin container -->
 			<div class="container">
-                <!--begin slider3-->
-				<div class="slider3">
-				    <div class="slide">
-				        <div class="slider__content-wrapper">
+                <!--begin owl-slider-->
+                <div id="owl-demo" class="owl-carousel owl-theme">
+				    <div class="item">
+				    	<div class="slider__content-wrapper">
 							<h1>JP Funride</br> 2014</h1>
 							<p>Super easy going freeride boards based on the X-Cite Ride shape con-</br>cept with additional control and super easy jibing. </p>
 							<button>BUY NOW</button>
 						</div> 
-					</div>
-				    <div class="slide">
-					  	<div class="slider__content-wrapper">
+				    </div>
+				    <div class="item">
+				    	<div class="slider__content-wrapper">
 							<h1>JP Funride</br> 2014</h1>
 							<p>Super easy going freeride boards based on the X-Cite Ride shape con-</br>cept with additional control and super easy jibing. </p>
 							<button>BUY NOW</button>
 						</div> 
-					</div>
-					<div class="slide">
-					  	<div class="slider__content-wrapper">
+				    </div>
+				    <div class="item">
+				    	<div class="slider__content-wrapper">
 							<h1>JP Funride</br> 2014</h1>
 							<p>Super easy going freeride boards based on the X-Cite Ride shape con-</br>cept with additional control and super easy jibing. </p>
 							<button>BUY NOW</button>
 						</div> 
-					</div>
+				    </div>
 				</div>
-				<!--end slider3-->
+	
+				        <!--<div class="slider__content-wrapper">
+							<h1>JP Funride</br> 2014</h1>
+							<p>Super easy going freeride boards based on the X-Cite Ride shape con-</br>cept with additional control and super easy jibing. </p>
+							<button>BUY NOW</button>
+						</div> -->
+					
+				<!--end owl-slider-->
 			</div>
 			<!-- end container -->
 		</div>
@@ -206,7 +216,7 @@
 					    <div class="slide">
 					        <!-- begin item__products --> 
 							<div class="item_product">
-								<a href="#" class="img-product__link"><img src="img/item-img.png" alt="item-name"></a>
+								<a href="#" class="img-product__link"><img src="img/item1-img.png" alt="item-name"></a>
 								<a href="#">
 									<span class="name__product">Single Thruster 2014</span>
 								</a>
@@ -689,14 +699,24 @@
 	<!-- end footer__wrapper -->
   
 <script>
-$(document).ready(function(){
-  $('.slider3').bxSlider({
-    slideWidth: 870,
-    minSlides: 1,
-    maxSlides: 1,
-    moveSlides: 1,
-    slideMargin: 30
+$(document).ready(function() {
+ 
+  $("#owl-demo").owlCarousel({
+ 
+      navigation : true, // Show next and prev buttons
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem: true
+ 
+      // "singleItem:true" is a shortcut for:
+      // items : 1, 
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false
+ 
   });
+ 
 });
 </script>
 <script>
