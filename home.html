@@ -7,9 +7,12 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/variables.css">
-	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />	
+	<!-- Owl carousel CSS file -->
 	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/owl.theme.css">
+	<!--       CSS file -->
+<link href="css/flexnav.css" rel="stylesheet" type="text/css" />
 	<!-- bxSlider CSS file -->
 	<link href="css/jquery.bxslider.css" rel="stylesheet" />
 	<!-- jQuery library -->
@@ -106,13 +109,6 @@
 						</div> 
 				    </div>
 				</div>
-	
-				        <!--<div class="slider__content-wrapper">
-							<h1>JP Funride</br> 2014</h1>
-							<p>Super easy going freeride boards based on the X-Cite Ride shape con-</br>cept with additional control and super easy jibing. </p>
-							<button>BUY NOW</button>
-						</div> -->
-					
 				<!--end owl-slider-->
 			</div>
 			<!-- end container -->
@@ -154,6 +150,38 @@
 				    </ul>
 				</nav>
 				<!-- end navigation -->
+
+				<!-- begin mobile navigation -->
+				<div class="mobile__navigation">
+					<div class="menu-button">Menu</div>
+				    <ul class="flexnav" data-breakpoint="800">
+					    <li><a href="#">About</a></li>
+					    <li><a href="#">apparel</a></li>
+					    <li><a href="#">surf apparel</a></li>
+					    <li><a href="#">windsurf </a>
+					    	<ul class="second-level">
+						    	<li><a href="#">kites</a></li>
+						    	<li><a href="#">kiteboards</a></li>
+						    	<li>
+						    		<a href="#">bags</a>
+						    		<ul class="third-level">
+							  			<li><a href="#">MAGIC Kit</a></li>
+							  			<li><a href="#">Pro limit s0214</a></li>
+						    		</ul>
+						    	</li>
+						    	<li><a href="#">equipment</a></li>
+					    	</ul>
+					    </li>
+					    <li><a href="#">kitesurf</a></li>
+					    <li><a href="#">accessories</a></li>
+					    <li><a href="#">sale </a></li>
+					    <li><a href="#">brands</a></li>
+					    <li><a href="#">blog</a></li>
+					    <li><a href="#">Gadgets</a></li>
+					    <li><a href="#">cantact</a></li>
+				    </ul>
+				</div>
+				<!-- end mobile navigation -->
 				<!-- begin banner__block -->
 				<div class="banner__block">
 					<span>Now</br> is</br> open!</span>
@@ -762,6 +790,14 @@ $(document).ready(function(){
 	});
 </script>
 <!-- end intagram widget script-->
+
+<!-- begin mobile__navigation script -->
+<script type="text/javascript" src="js/jquery.flexnav.min.js"></script>
+<script>
+	$(".flexnav").flexNav();
+</script>
+<!-- end mobile__navigation script -->
+
 </body>
 </html>
 

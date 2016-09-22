@@ -370,6 +370,8 @@ header .social-icon select option {
 }
 aside {
   /*VERTICAL MENU*/
+  /***mobile__navigation ***/
+  /***mobile__navigation ***/
 }
 aside .vertical {
   position: relative;
@@ -382,6 +384,11 @@ aside .vertical {
   /* ALL UL */
   /* ALL LI */
   /* ALL A */
+}
+@media screen and (max-width: 800px) {
+  aside .vertical {
+    display: none;
+  }
 }
 aside .vertical h2 {
   padding: 29px 0 20px 42px;
@@ -710,6 +717,7 @@ aside .articles_block .view__all_link:hover {
 }
 .bottom__content .brand__block {
   background: #fff;
+  text-align: center;
 }
 .bottom__content .brand__block a {
   display: inline-block;
@@ -758,6 +766,7 @@ aside .articles_block .view__all_link:hover {
 }
 .bottom__content .instagram__widget ul {
   list-style: none;
+  text-align: center;
 }
 .bottom__content .instagram__widget ul li {
   display: inline-block;
