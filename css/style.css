@@ -81,8 +81,10 @@
     transform: translateY(0);
   }
 }
-body {
-  max-width: 1500px;
+@media screen and (max-width: 960px) {
+  .media-fontsize-a {
+    font-size: 20px;
+  }
 }
 .top-wrapper {
   width: 100%;
@@ -148,9 +150,29 @@ header .social-icon select option {
   float: left;
   width: 270px;
 }
+@media screen and (max-width: 1178px) {
+  .top-wrapper_center .cart__block {
+    width: 240px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .top-wrapper_center .cart__block {
+    width: 100%;
+  }
+}
 .top-wrapper_center .container {
   float: right;
   width: 74%;
+}
+@media screen and (max-width: 960px) {
+  .top-wrapper_center .container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .top-wrapper_center .container {
+    display: none;
+  }
 }
 .top-wrapper_center .container .slider__content-wrapper {
   color: #fff51f;
@@ -159,6 +181,16 @@ header .social-icon select option {
   float: right;
   margin-right: 92px;
   padding: 106px 0 105px 0;
+}
+@media screen and (max-width: 1178px) {
+  .top-wrapper_center .container .slider__content-wrapper {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .top-wrapper_center .container .slider__content-wrapper {
+    width: 75%;
+  }
 }
 .top-wrapper_center .container .slider__content-wrapper h1 {
   font-weight: 900;
@@ -215,9 +247,19 @@ header .social-icon select option {
 .user__basket .login a:focus {
   text-decoration: underline;
 }
+@media screen and (max-width: 960px) {
+  .user__basket .login a {
+    font-size: 20px;
+  }
+}
 .user__basket .cart {
   background: #fb4d01;
   overflow: hidden;
+}
+@media screen and (max-width: 960px) {
+  .user__basket .cart {
+    text-align: center;
+  }
 }
 .user__basket .cart img,
 .user__basket .cart .cash__block,
@@ -231,6 +273,11 @@ header .social-icon select option {
   width: 50%;
   font-family: 'Raleway', sans-serif;
   padding-left: 1px;
+}
+@media screen and (max-width: 1178px) {
+  .user__basket .cart .cash__block {
+    width: 41%;
+  }
 }
 .user__basket .cart .cash__cart {
   color: #fff;
@@ -250,6 +297,11 @@ header .social-icon select option {
   text-transform: uppercase;
   color: #333;
   font-size: 10px;
+}
+@media screen and (max-width: 960px) {
+  .user__basket .cart .cart__control a {
+    font-size: 20px;
+  }
 }
 .user__basket .cart .cart__control .delete__cart {
   padding: 16px 16px 7px 15px;
@@ -271,6 +323,11 @@ header .social-icon select option {
   font-weight: 400;
   text-transform: uppercase;
   overflow: hidden;
+}
+@media screen and (max-width: 960px) {
+  .user__basket .cart__info {
+    font-size: 20px;
+  }
 }
 .user__basket .cart__info .view__cart,
 .user__basket .cart__info .checkout {
@@ -306,6 +363,12 @@ header .social-icon select option {
   font-weight: 400;
   text-transform: uppercase;
   padding: 13px 0 12px 14px;
+  width: 83%;
+}
+@media screen and (max-width: 960px) {
+  .user__basket .search__cart .search {
+    font-size: 20px;
+  }
 }
 .user__basket .search__cart button {
   float: right;
@@ -329,6 +392,11 @@ header .social-icon select option {
   padding: 79px 25px 82px 21px;
   background: #fff51f;
 }
+@media screen and (max-width: 960px) {
+  .box__welcome {
+    display: none;
+  }
+}
 .box__welcome h2 {
   font-size: 30px;
   text-transform: uppercase;
@@ -341,13 +409,21 @@ header .social-icon select option {
   line-height: 14px;
 }
 .main-wrap {
-  max-width: 1500px;
   background: #f8f8f8;
+  /* mobile__navigation */
 }
 .main-wrap .clearfix:after {
   content: "";
   display: table;
   clear: both;
+}
+.main-wrap .mobile__navigation {
+  position: absolute;
+}
+@media screen and (max-width: 960px) {
+  .main-wrap .mobile__navigation {
+    position: static;
+  }
 }
 .main-wrap .main {
   max-width: 1170px;
@@ -358,11 +434,28 @@ header .social-icon select option {
   width: 270px;
   margin-top: -20px;
 }
+@media screen and (max-width: 1178px) {
+  .main-wrap .main aside {
+    width: 240px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .main-wrap .main aside {
+    display: none;
+  }
+}
 .main-wrap .main .products {
   float: right;
   width: 74%;
   margin-top: -20px;
   background: #f8f8f8;
+}
+@media screen and (max-width: 960px) {
+  .main-wrap .main .products {
+    width: 100%;
+    margin-top: 10px;
+  }
 }
 .main-wrap .main .bottom__content {
   width: 100%;
@@ -370,8 +463,6 @@ header .social-icon select option {
 }
 aside {
   /*VERTICAL MENU*/
-  /***mobile__navigation ***/
-  /***mobile__navigation ***/
 }
 aside .vertical {
   position: relative;
@@ -748,14 +839,14 @@ aside .articles_block .view__all_link:hover {
   text-decoration: none;
   display: block;
   margin: 0 auto;
+  padding-left: 28px;
   width: 25%;
+  background: url(../img/insta-icon.png) 0% 0% no-repeat;
 }
-.bottom__content .instagram__widget h2 a i {
-  float: left;
-  display: block;
-  height: 28px;
-  width: 28px;
-  background: url(../img/insta-icon.png) 39% 50% no-repeat;
+@media screen and (max-width: 960px) {
+  .bottom__content .instagram__widget h2 a {
+    width: 50%;
+  }
 }
 .bottom__content .instagram__widget h2 a:hover,
 .bottom__content .instagram__widget h2 a:focus {
@@ -770,7 +861,6 @@ aside .articles_block .view__all_link:hover {
 }
 .bottom__content .instagram__widget ul li {
   display: inline-block;
-  margin-right: 9px;
 }
 .bottom__content .instagram__widget ul li:hover,
 .bottom__content .instagram__widget ul li:focus {
@@ -846,6 +936,12 @@ aside .articles_block .view__all_link:hover {
   -webkit-flex-wrap: nowrap;
           flex-wrap: nowrap;
 }
+@media screen and (max-width: 880px) {
+  .footer__wrapper footer,
+  .footer__wrapper .copyright-wrap p {
+    display: block;
+  }
+}
 .footer__wrapper footer .category,
 .footer__wrapper .copyright-wrap p .category {
   margin-left: 30px;
@@ -863,6 +959,27 @@ aside .articles_block .view__all_link:hover {
   margin-right: 30px;
   overflow: hidden;
   line-height: 18px;
+}
+@media screen and (max-width: 1050px) {
+  .footer__wrapper footer .category,
+  .footer__wrapper .copyright-wrap p .category,
+  .footer__wrapper footer .our__account,
+  .footer__wrapper .copyright-wrap p .our__account,
+  .footer__wrapper footer .our__support,
+  .footer__wrapper .copyright-wrap p .our__support {
+    margin-right: 15px;
+  }
+}
+@media screen and (max-width: 880px) {
+  .footer__wrapper footer .category,
+  .footer__wrapper .copyright-wrap p .category,
+  .footer__wrapper footer .our__account,
+  .footer__wrapper .copyright-wrap p .our__account,
+  .footer__wrapper footer .our__support,
+  .footer__wrapper .copyright-wrap p .our__support {
+    float: left;
+    width: 25%;
+  }
 }
 .footer__wrapper footer .category h2,
 .footer__wrapper .copyright-wrap p .category h2,
@@ -910,6 +1027,28 @@ aside .articles_block .view__all_link:hover {
   width: 270px;
   margin-right: 30px;
   line-height: 18px;
+}
+@media screen and (max-width: 1050px) {
+  .footer__wrapper footer .newsletter,
+  .footer__wrapper .copyright-wrap p .newsletter {
+    margin-right: 15px;
+    width: 240px;
+  }
+}
+@media screen and (max-width: 880px) {
+  .footer__wrapper footer .newsletter,
+  .footer__wrapper .copyright-wrap p .newsletter {
+    float: left;
+    width: 40%;
+    margin: 45px 4%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer__wrapper footer .newsletter,
+  .footer__wrapper .copyright-wrap p .newsletter {
+    width: 100%;
+    margin-right: 3%;
+  }
 }
 .footer__wrapper footer .newsletter h2,
 .footer__wrapper .copyright-wrap p .newsletter h2 {
@@ -978,6 +1117,27 @@ aside .articles_block .view__all_link:hover {
   line-height: 12px;
   margin-right: 28px;
 }
+@media screen and (max-width: 960px) {
+  .footer__wrapper footer .about__us,
+  .footer__wrapper .copyright-wrap p .about__us {
+    width: 230px;
+  }
+}
+@media screen and (max-width: 880px) {
+  .footer__wrapper footer .about__us,
+  .footer__wrapper .copyright-wrap p .about__us {
+    float: left;
+    width: 40%;
+    margin: 45px 4%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer__wrapper footer .about__us,
+  .footer__wrapper .copyright-wrap p .about__us {
+    width: 90%;
+    margin-right: 3%;
+  }
+}
 .footer__wrapper footer .about__us h2,
 .footer__wrapper .copyright-wrap p .about__us h2 {
   font-family: 'Raleway', sans-serif;
@@ -1019,6 +1179,11 @@ aside .articles_block .view__all_link:hover {
   background: #333;
   padding: 22px 0 16px;
   margin-top: 64px;
+}
+@media screen and (max-width: 880px) {
+  .footer__wrapper .copyright-wrap {
+    margin-top: 0;
+  }
 }
 .footer__wrapper .copyright-wrap p {
   color: #dad9d9;
