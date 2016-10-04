@@ -4,6 +4,10 @@
 .roboto {
   font-family: 'Roboto', sans-serif;
 }
+.bg-social-icon-contact {
+  background: #c1c1c1;
+  opacity: 0.7;
+}
 /* Wobble Vertical  Animation*/
 .wobble-vertical {
   display: inline-block;
@@ -86,6 +90,193 @@
     font-size: 20px;
   }
 }
+.contact__page .top-wrapper {
+  background-image: url(../img/contact__page-map.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 13.44em;
+}
+.contact__page .top-wrapper .social-icon {
+  background: #c1c1c1;
+  opacity: 0.7;
+}
+.contact__page .top-wrapper .social-icon select {
+  background: #c1c1c1;
+  opacity: 0.7;
+}
+.contact__page .top-wrapper .social-icon select option {
+  background: #c1c1c1;
+  opacity: 0.7;
+}
+.contact__page .main-wrap .main {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.contact__page .main-wrap .main aside {
+  margin-top: 0;
+}
+.contact__page .main-wrap .main .contacts__block {
+  width: 70%;
+  background: #f8f8f8;
+  overflow: hidden;
+}
+@media screen and (max-width: 960px) {
+  .contact__page .main-wrap .main .contacts__block {
+    width: 100%;
+    padding-left: 0px;
+  }
+}
+.contacts__block {
+  padding-left: 30px;
+  overflow: hidden;
+}
+.contacts__block .breadcrubms {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 12px 20px 12px 25px;
+  overflow: hidden;
+  margin-bottom: 75px;
+}
+.contacts__block .breadcrubms a {
+  text-decoration: none;
+  color: #989898;
+  line-height: 20px;
+  padding: 0 5px;
+}
+.contacts__block .breadcrubms a:hover,
+.contacts__block .breadcrubms a:focus {
+  text-decoration: underline;
+}
+.contacts__block .breadcrubms a.active {
+  background: #faef03;
+}
+.contacts__block .breadcrubms a:last-child {
+  float: right;
+}
+.contacts__block .form__block,
+.contacts__block .adress__block {
+  padding: 0 9px;
+  float: left;
+}
+@media screen and (max-width: 487px) {
+  .contacts__block .form__block,
+  .contacts__block .adress__block {
+    width: 100%;
+    float: none;
+  }
+}
+.contacts__block .form__block {
+  width: 42.5%;
+  margin-right: 14px;
+  position: relative;
+}
+.contacts__block .form__block:before {
+  content: "";
+  position: absolute;
+  right: -14px;
+  top: 85px;
+  width: 1px;
+  height: 330px;
+  background: #efefef;
+}
+.contacts__block .form__block label {
+  display: block;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 10px;
+}
+.contacts__block .form__block input,
+.contacts__block .form__block textarea {
+  border: 1px solid #efefef;
+  width: 90%;
+  margin-bottom: 34px;
+  padding: 9px 17px;
+}
+.contacts__block .adress__block {
+  width: 39%;
+  margin-left: 14px;
+  line-height: 14px;
+}
+.contacts__block .adress__block h2 {
+  font-family: 'Roboto', sans-serif;
+  color: #353535;
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 18px;
+}
+.contacts__block .adress__block p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #777;
+}
+.contacts__block .adress__block p:last-child {
+  color: #333;
+  font-size: 14px;
+  margin-top: 30px;
+}
+.contacts__block .adress__block p:nth-child(2) i {
+  display: inline-block;
+  background: url(../img/location-icon.png) 0 0 no-repeat;
+  width: 14px;
+  height: 21px;
+  margin-right: 7px;
+}
+.contacts__block .adress__block p:nth-child(2) span {
+  display: inline-block;
+}
+.contacts__block .adress__block .phone {
+  color: #333;
+  font-size: 20px;
+  margin-top: 18px;
+}
+.contacts__block .adress__block .phone i {
+  display: inline-block;
+  background: url(../img/phone-icon.png) 0 0 no-repeat;
+  width: 15px;
+  height: 15px;
+  margin-right: 11px;
+}
+.contacts__block .adress__block .contact_email {
+  font-size: 16px;
+  margin-top: 18px;
+}
+.contacts__block .adress__block .contact_email i {
+  display: inline-block;
+  background: url(../img/email-icon.png) 0 0 no-repeat;
+  width: 18px;
+  height: 15px;
+  margin-right: 8px;
+}
+.contacts__block .adress__block .contact_email a {
+  color: #333;
+}
+.contacts__block .adress__block .contact_email a:focus,
+.contacts__block .adress__block .contact_email a:hover {
+  color: red;
+}
+.contacts__block .brand__block {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+}
+.contacts__block .form__block,
+.contacts__block .adress__block {
+  padding: 0 9px;
+  float: left;
+}
+@media screen and (max-width: 560px) {
+  .contacts__block .form__block,
+  .contacts__block .adress__block {
+    width: 95%;
+    float: none;
+  }
+}
 .top-wrapper {
   width: 100%;
   background: #abeafa;
@@ -106,7 +297,8 @@ header .logo img {
 header .social-icon {
   float: right;
   font-size: 0;
-  margin: 50px 16px 0 0px;
+  padding: 10px 14px 10px 24px;
+  margin: 40px 16px 0 0px;
 }
 header .social-icon a {
   margin-right: 11px;
